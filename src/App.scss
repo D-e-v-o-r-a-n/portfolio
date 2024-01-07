@@ -1,0 +1,71 @@
+$orange: #FEAC5E;
+$pink: #C779D0;
+$cyan: #4BC0C8;
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@keyframes pulse {
+  0% {border-bottom-color: $orange;}
+  33% {border-bottom-color: $pink;}
+  66% {border-bottom-color: $cyan;}
+  100% {border-bottom-color: $orange;}
+}
+
+body{
+  background-color: #1a1a1a;
+}
+
+header{
+  position: fixed;
+  left: 0;
+  top:0;
+  right: 0;
+  display: flex;
+  justify-content: right;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid $orange;
+  animation: pulse 15s infinite linear;
+  z-index: 1;
+  color: white;
+  nav{
+   height: 5rem;
+   ul{
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+    margin: 2rem;
+    list-style: disclosure-closed;
+    padding: 0;
+  
+    li{
+      margin-bottom: 4rem;
+    }
+    li:hover{
+      transition-duration: 600ms;
+      transform: translateY(-5px);
+    }
+    a{
+      text-decoration: none;
+      color: white;
+     }
+   }
+  }
+}
+
+.content{
+  position: absolute;
+  top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+
+
