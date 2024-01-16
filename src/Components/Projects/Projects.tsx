@@ -13,9 +13,7 @@ const ProjectsComponent:FC<ProjectsProps> = ( props ) => {
       <div className='projects-list'>
         {projectsArray.map((project)=>{
             return (
-              <Link to={`${[project.id]}`} onClick={()=>{console.log(project)}}>
-                <ProjectsListItem project={project}/>
-              </Link>
+              <ProjectsListItem project={project}/>
             )
             
         })}

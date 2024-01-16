@@ -16,38 +16,13 @@ a{
     animation: pulse-all 15s infinite linear;
     padding: 1rem;
 
+    h2{
+        animation: pulse-color 25s infinite
+    }
     .text-container{
         display: flex;
         flex-direction: column;
         gap: 1rem;
         margin: 1rem;
     }
-    img{
-        max-height: 360px;
-        max-width: 550px;
-    }
-
-    &:hover{
-        cursor: pointer;
-    }
-
 }
-
-@keyframes pulse {
-    0% {
-        border-color: utilities.$orange;
-    }
-    33% {
-        border-color: utilities.$pink;
-    
-    }
-    66% {
-        border-color: utilities.$cyan;
-
-    }
-    100% {
-        border-color: utilities.$orange;
-
-    }
-  }
-  

@@ -10,11 +10,11 @@ const ProjectPage:FC<RouteComponentProps> = ( props ) => {
     return(
     <> 
         <div className='project-page-containter'>
-            <h1>{project.name}</h1>
+            <span>{project.name}</span>
             <div>
                 {project.description}
                <img src={project.images[0]} alt="" /> 
-               <img src={project.images[1]} alt="" /> 
+               <img src={project?.images[2]} alt="Image not found" /> 
             </div>
         </div>
     </>
