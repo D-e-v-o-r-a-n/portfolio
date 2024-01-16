@@ -1,0 +1,23 @@
+$orange: #FEAC5E;
+$pink: #C779D0;
+$cyan: #4BC0C8;
+$gray: #1a1a1a;
+
+@keyframes pulse-bottom {
+    0% {border-bottom-color: $orange;}
+    33% {border-bottom-color: $pink;}
+    66% {border-bottom-color: $cyan;}
+    100% {border-bottom-color: $orange;}
+  }
+@keyframes pulse-all {
+    0% {border-color: $orange;}
+    33% {border-color: $pink;}
+    66% {border-color: $cyan;}
+    100% {border-color: $orange;}
+  }
+@keyframes pulse-color {
+    0% {color: $orange;}
+    33% {color: $pink;}
+    66% {color: $cyan;}
+    100% {color: $orange;}
+}
