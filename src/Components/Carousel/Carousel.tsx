@@ -1,4 +1,4 @@
-import React, {FC,useState} from 'react';
+import React, {FC,useEffect,useState} from 'react';
 import './Carousel.scss'
 
 interface CarouselProps{
@@ -23,8 +23,8 @@ const Carousel:FC<CarouselProps> = ( props ) => {
             {props.slides.map((slide,index)=>{
                 return <img src={slide} alt="" key={index} className={slideState === index ? 'carousel-slide' : 'carousel-slide-hidden'}/>
             })}
-            <button className='carousel-buttons' id='right-arrow' onClick={nextSlide}></button>
-            <button className='carousel-buttons' id='left-arrow' onClick={previousSlide}></button>
+            <button className='carousel-buttons' id='right-arrow' onClick={nextSlide} style={props.slides.length === 1 ? {display: 'none'} : {}}></button>
+            <button className='carousel-buttons' id='left-arrow' onClick={previousSlide} style={props.slides.length === 1 ? {display: 'none'} : {}}></button>
 
 
             <span className='carousel-indicators-container'>

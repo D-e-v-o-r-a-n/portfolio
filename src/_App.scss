@@ -41,6 +41,9 @@ header{
       li{
         margin-bottom: 4rem;
       }
+      li::marker{
+        animation: pulse-color 15s infinite;
+      }
       li:hover{
         transition-duration: 600ms;
         transform: translateY(-5px);

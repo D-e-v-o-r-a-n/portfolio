@@ -22,3 +22,21 @@ $gray: #1a1a1a;
     66% {color: $cyan;}
     100% {color: $orange;}
 }
+
+@mixin round-corners{
+  width: 7rem;
+  padding: 0.5rem;
+  background-color: $gray;
+  color: white;
+  outline: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border: 1px solid;
+  animation: pulse-all 25s infinite;
+}

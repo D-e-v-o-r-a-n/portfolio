@@ -5,6 +5,7 @@ a{
 }
 
 .project-container{
+    position: relative;
     width: 62rem;
     height: 25rem;
     color: white;
@@ -24,5 +25,42 @@ a{
         flex-direction: column;
         gap: 1rem;
         margin: 1rem;
+    }
+    .links-container{
+        position: absolute;
+        bottom: 1rem;
+        left: 2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 1rem;
+        .link-button{
+            @include utilities.round-corners;
+
+        }
+        .github-link-button{
+            @extend .link-button;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+    .tags{
+        position: absolute;
+        right: -10rem;
+        top: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        .tag{
+           @include utilities.round-corners;
+           width: 8rem;
+
+
+        }
     }
 }

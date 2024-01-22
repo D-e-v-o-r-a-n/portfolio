@@ -3,6 +3,7 @@ import { Link, RouteComponentProps} from '@reach/router'
 import { projectInterface } from '../Projects/array'
 import './_ProjectListItem.scss'
 import Carousel from '../Carousel/Carousel';
+import { FaGithub } from "react-icons/fa6";
 
 
 interface ProjectProps extends RouteComponentProps {
@@ -18,7 +19,17 @@ const ProjectsListItem:FC<ProjectProps> = ( props ) => {
             <h2>{props.project.name}</h2>
             <div>{props.project.description}</div>
         </div>
-        <Carousel slides={props.project.images}/>   
+        <div className="links-container">
+            <a href={props.project.links[0]} className='link-button'>Check out</a>
+            <a href={props.project.links[1]} className='github-link-button'> <FaGithub/></a>
+        </div>
+        <Carousel slides={props.project.images}/>
+
+        <div className="tags">
+            {props.project.tags.map(tag=>{
+                return <span className='tag'>{tag}</span>
+            })}
+        </div>
     </div>
 
     )
