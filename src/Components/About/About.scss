@@ -1,3 +1,57 @@
-div{
-    animation: pulse 3s infinite linear;
+@use '../../utilities';
+html{
+    scroll-behavior: smooth;
+}
+.about-container{
+    position: relative;
+    width: 66rem;
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+    height: 100vh;
+    scroll-margin-top: 200px;
+
+    .about-content{
+        width: 35rem;
+        section{
+            margin: 4rem;
+            scroll-margin-top: 10rem;
+            ul{
+                span{
+                    display: block;
+                    margin-bottom: 1rem;
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+    .about-sidebar{
+        position: fixed;
+        right: 30rem;
+        border-left: 2px solid;
+
+        animation: pulse-all 40s infinite;
+
+        .sidebar-list{
+            li:hover{
+                transition-duration: 600ms;
+                transform: translateY(-3.5px);
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+    ul{
+        list-style-type: '-';
+        li{
+            padding-left: 0.5rem;
+        }
+        li::marker{
+            animation: pulse-color 40s infinite;
+        }
+    }
+
+
 }

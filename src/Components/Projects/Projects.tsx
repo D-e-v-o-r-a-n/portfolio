@@ -15,7 +15,6 @@ const ProjectsComponent:FC<ProjectsProps> = ( props ) => {
             return (
               <ProjectsListItem project={project}/>
             )
-            
         })}
       </div>
     )

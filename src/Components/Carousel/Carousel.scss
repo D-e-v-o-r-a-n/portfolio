@@ -8,7 +8,7 @@
     align-items: center;
     
     .carousel-slide{
-        width:200% ;
+        width:  45rem;
         border-radius: 2%;
     }
     .carousel-slide-hidden{
@@ -26,8 +26,8 @@
         gap: 0.5rem;
 
         .carousel-indicator{
-            width: 0.5rem;
-            height: 0.5rem;
+            width: 0.8rem;
+            height: 0.8rem;
             border-radius: 100%;
             border: none;
             outline: none;
