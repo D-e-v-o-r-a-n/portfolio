@@ -1,7 +1,7 @@
 import React, {FC,Ref,useEffect,useRef} from 'react';
 import { RouteComponentProps, Link} from '@reach/router'
 import ProjectsListItem from '../ProjectListItem/ProjectListItem';
-import projectsArray, { projectInterface } from './array'
+import projectsArray, { projectInterface } from './projectsArray'
 import './Projects.scss'
 
 interface ProjectsProps extends RouteComponentProps {

@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import { Link, RouteComponentProps} from '@reach/router'
-import { projectInterface } from '../Projects/array'
+import { projectInterface } from '../Projects/projectsArray'
 import './_ProjectListItem.scss'
 import Carousel from '../Carousel/Carousel';
 import { FaGithub } from "react-icons/fa6";

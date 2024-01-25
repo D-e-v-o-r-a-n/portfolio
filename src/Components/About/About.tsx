@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import { RouteComponentProps} from '@reach/router'
 import './About.scss'
+import ContactComponent from '../Contact/Contact';
 
 
 const AboutComponent:FC<RouteComponentProps> = (props) => {
@@ -50,30 +51,41 @@ const AboutComponent:FC<RouteComponentProps> = (props) => {
                 <ul>
                   <li>None</li>
                   <span>Yeah. Tbh i dont talk to people you know.</span>
+
+                  <li>Inquisitiveness</li>
+                  <span>I try to undernstand exactly how things work and why</span>
+
+                  <li>Meeting deadlines</li>
+                  <span>I like things on time yk</span>
+
+                  <li>Passionate about learning</li>
+                  <span>Im always looking to expand my knowledge and skillset.</span>
+
+                  <li>Critical thinking</li>
+                  <span></span>
+
                 </ul>
               </section>
           </div>
           <div className="about-sidebar">
             <ul className="sidebar-list">
-
               <a href="#about">
                 <li>About</li>
               </a>
-              
               <a href="#skills">
                 <li>Skills</li>
               </a>
-
               <ul>
                 <a href="#technologies">
                   <li>Technologies</li>
                 </a>
-
                 <a href="#soft-skills">
                   <li>Soft Skills</li>
                 </a>
               </ul>
             </ul>
+
+            <ContactComponent />
           </div>
         </div>
         
