@@ -61,12 +61,10 @@ header{
   position: absolute;
   top: 5rem;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  min-height: 83vh;
   margin-top: 5rem;
 }
-
-
-

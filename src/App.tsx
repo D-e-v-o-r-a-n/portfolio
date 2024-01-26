@@ -5,6 +5,7 @@ import { Link, RouteComponentProps, Router } from '@reach/router'
 import HomeComponent from './Components/Home/Home';
 import ProjectsComponent from './Components/Projects/Projects';
 import AboutComponent from './Components/About/About';
+import FooterComponent from './Components/Footer/Footer';
 
 let Home = (props: RouteComponentProps) => <HomeComponent />
 
@@ -40,11 +41,12 @@ function App() {
       </header>
 
       <div className='content'>
-          <Router>
+          <Router primary={false}>
             <Home path='/' />
             <ProjectsComponent path='/projects/'/>
             <AboutComponent path = '/about/'/>
           </Router>
+      <FooterComponent/>
       </div>
     </>
   )

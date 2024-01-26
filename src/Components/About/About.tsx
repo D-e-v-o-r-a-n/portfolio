@@ -10,19 +10,16 @@ const AboutComponent:FC<RouteComponentProps> = (props) => {
         <div className='about-container'>
           <div className="about-content">
               <section id='about'>
-                I'am a student majoring in computer science and Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Beatae, soluta atque sint quos pariatur dolorem mollitia, harum perferendis ipsa quasi illum accusamus delectus!
-                Illo vel nostrum iste voluptatibus eum odio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti est nemo amet, beatae veniam dolorum dolores.
-                Nam amet, itaque laboriosam libero, id iusto, repellendus reprehenderit voluptatibus sint alias cum deserunt?
+              <h2>About me</h2>
+                I'am a student majoring in computer science and I take a great intrest in Web Developement.
               </section>
               <section id='skills'>
-                I'am a student majoring in computer science and Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Beatae, soluta atque sint quos pariatur dolorem mollitia, harum perferendis ipsa quasi illum accusamus delectus!
-                Illo vel nostrum iste voluptatibus eum odio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti est nemo amet, beatae veniam dolorum dolores.
-                Nam amet, itaque laboriosam libero, id iusto, repellendus reprehenderit voluptatibus sint alias cum deserunt?
+                <h2>Skills</h2>
+                Below I listed out some of my crucial qualities
+              
               </section>
               <section id="technologies">
-                <span>Technologies</span>
+                <h2>Technologies</h2>
                 <ul>
                   <li>HTML + CSS</li>
                   <span>I have intrest in web developement so of course these are needed and I feel comfortable with them</span>
@@ -47,13 +44,13 @@ const AboutComponent:FC<RouteComponentProps> = (props) => {
                 </ul>
               </section>
               <section id="soft-skills">
-                <span>Soft Skills</span>
+                <h2>Soft Skills</h2>
                 <ul>
                   <li>None</li>
                   <span>Yeah. Tbh i dont talk to people you know.</span>
 
                   <li>Inquisitiveness</li>
-                  <span>I try to undernstand exactly how things work and why</span>
+                  <span>I try to understand exactly how things work and why</span>
 
                   <li>Meeting deadlines</li>
                   <span>I like things on time yk</span>

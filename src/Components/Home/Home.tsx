@@ -1,13 +1,12 @@
 import React, {FC} from 'react';
 import './Home.scss'
 import ContactComponent from '../Contact/Contact';
-
+import ProjectsComponent from '../Projects/Projects';
+import AboutComponent from '../About/About';
 const HomeComponent:FC = () => {
   return (
     <>
-        <div>Hello</div>
-
-        <ContactComponent />
+        <h2 id='welcome'>Hello! Im Bartek</h2>
     </>
   );
 }
