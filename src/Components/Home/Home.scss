@@ -2,9 +2,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     margin-bottom: 10rem;
-}
-#vl{
     border-bottom: 2px solid;
-    animation: pulse-all 25s infinite;
+    animation: pulse-bottom  20s  infinite;
+
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 2rem;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        border: 2px solid ;
+        z-index: -1;
+        animation: pulse-color 5s infinite, wavy-shapes 10s infinite alternate;
+    }
 }
+
+

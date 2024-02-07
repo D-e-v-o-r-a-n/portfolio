@@ -30,7 +30,7 @@ projectsArray.push({
     description: 'Web app which allows for transcription to alphabeth from star wars - aurebesh',
     links:["https://aurebeshtranslator-6db2a.web.app/",'https://github.com/D-e-v-o-r-a-n/Aurebesh-translator'],
     images:['/Images/Arbsh1.png',],
-    tags:['HTML','CSS','JavaScript','SCSS','React','Firebase'],
+    tags:['HTML','CSS','JavaScript','Firebase'],
     id:2
 })
 

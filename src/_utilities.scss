@@ -22,6 +22,61 @@ $gray: #1a1a1a;
     66% {color: $cyan;}
     100% {color: $orange;}
 }
+@keyframes pulse-bgcolor {
+    0% {background-color: $orange;}
+    33% {background-color: $pink;}
+    66% {background-color: $cyan;}
+    100% {background-color: $orange;}
+}
+@keyframes wavy-shapes {
+  0%{transform: matrix3d(
+      1, 0, 0, 0 ,
+      0, 1, 0, 0,
+      0, 0, 1, 0 ,
+      0, -100, 0, 1);}
+  30%{transform: matrix3d(
+      1, 0, 0, 0 ,
+      0, 1, 0, 0,
+      0, 0, 1, 0 ,
+      0, 0, 0, 1);}
+
+  40%{transform: matrix3d(
+    1, 0, 0, 0 ,
+    0, 1, 0, 0,
+    0, 0, 1, 0 ,
+    275, 0, 0, 1);}
+
+  50%{transform: matrix3d(
+    1, 0, 0, 0 ,
+    0, 1, 0, 0,
+    0, 0, 1, 0 ,
+    275, 100, 0, 1);}
+
+  60%{transform: matrix3d(
+    1, 0, 0, 0 ,
+    0, 1, 0, 0,
+    0, 0, 1, 0 ,
+    -275, 100, 0, 1);}
+
+  70%{transform: matrix3d(
+    1, 0, 0, 0 ,
+    0, 1, 0, 0,
+    0, 0, 1, 0 ,
+    -275, 0, 0, 1);}
+
+  80%{transform: matrix3d(
+    1, 0, 0, 0 ,
+    0, 1, 0, 0,
+    0, 0, 1, 0 ,
+    0, 0, 0, 1);}
+
+  100%{
+    transform: matrix3d(
+    1, 0, 0, 0 ,
+    0, 1, 0, 0,
+    0, 0, 1, 0 ,
+    0, -100, 0, 1);}
+  }
 
 @mixin round-corners{
   width: 7rem;

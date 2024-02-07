@@ -10,8 +10,9 @@ const AboutComponent:FC<RouteComponentProps> = (props) => {
         <div className='about-container'>
           <div className="about-content">
               <section id='about'>
-              <h2>About me</h2>
-                I'am a student majoring in computer science and I take a great intrest in Web Developement.
+              <h2>About me</h2>  
+              I am a student majoring in computer science who is taking his first steps in the WebDev industry.
+              I am an open person, focused on acquiring knowledge and achieving goals.
               </section>
               <section id='skills'>
                 <h2>Skills</h2>
@@ -46,20 +47,17 @@ const AboutComponent:FC<RouteComponentProps> = (props) => {
               <section id="soft-skills">
                 <h2>Soft Skills</h2>
                 <ul>
-                  <li>None</li>
-                  <span>Yeah. Tbh i dont talk to people you know.</span>
-
                   <li>Inquisitiveness</li>
                   <span>I try to understand exactly how things work and why</span>
 
                   <li>Meeting deadlines</li>
-                  <span>I like things on time yk</span>
+                  <span>I organize my tasks to complete them on time</span>
 
                   <li>Passionate about learning</li>
                   <span>Im always looking to expand my knowledge and skillset.</span>
 
                   <li>Critical thinking</li>
-                  <span></span>
+                  <span>Im always trying to test my ideas and find the best solution</span>
 
                 </ul>
               </section>
