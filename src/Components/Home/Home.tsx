@@ -6,7 +6,7 @@ import AboutComponent from '../About/About';
 const HomeComponent:FC = () => {
   return (
     <>
-        <h2 id='welcome'>Hello! Im Bartek</h2>
+        <h2 id='welcome'>Hello! Im Bartek.</h2>
     </>
   );
 }

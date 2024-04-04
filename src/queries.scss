@@ -1,0 +1,41 @@
+@media screen and (max-width: 400px) {
+    header{
+      justify-content: center;
+
+      div{
+        nav{
+          ul{
+           width: 16rem;
+         }
+        }
+        }
+    }
+    .project-container{
+        position: initial;
+        width: 22rem;
+        height: auto;
+        display: block;
+
+        .text-container{
+            font-size: 0.7rem;
+        }
+
+        .links-container{
+            position: inherit;
+            margin: 1rem;
+        }
+    }
+    .carousel{
+        width: auto;
+        .carousel-slide{
+            width: 21rem;
+        }
+    }
+    .footer-container{
+        font-size: 0.4rem;
+        div{
+            padding: 0;
+        }
+    }
+}
+  

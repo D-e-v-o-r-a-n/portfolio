@@ -6,6 +6,7 @@ import HomeComponent from './Components/Home/Home';
 import ProjectsComponent from './Components/Projects/Projects';
 import AboutComponent from './Components/About/About';
 import FooterComponent from './Components/Footer/Footer';
+import './queries.scss'
 
 let Home = (props: RouteComponentProps) => <HomeComponent />
 
