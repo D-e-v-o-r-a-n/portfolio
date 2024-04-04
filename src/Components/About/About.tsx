@@ -11,7 +11,7 @@ const AboutComponent:FC<RouteComponentProps> = (props) => {
           <div className="about-content">
               <section id='about'>
               <h2>About me</h2>  
-              I am a student majoring in computer science who is taking his first steps in the WebDev industry.
+              I am a young beginner in the IT.
               I am an open person, focused on acquiring knowledge and achieving goals.
               </section>
               <section id='skills'>

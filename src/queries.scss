@@ -1,4 +1,4 @@
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1700px) {
     header{
       justify-content: center;
 
@@ -11,7 +11,6 @@
         }
     }
     .project-container{
-        position: initial;
         width: 22rem;
         height: auto;
         display: block;
@@ -21,7 +20,7 @@
         }
 
         .links-container{
-            position: inherit;
+            position: initial;
             margin: 1rem;
         }
     }
@@ -35,6 +34,19 @@
         font-size: 0.4rem;
         div{
             padding: 0;
+        }
+    }
+
+    .about-container{
+        width: 26rem;
+        .about-content{
+            margin-top: 10rem;
+        }
+        .about-sidebar{
+            position: absolute;
+            top: -69px;
+            right: 0px;
+            left: 90px;
         }
     }
 }
